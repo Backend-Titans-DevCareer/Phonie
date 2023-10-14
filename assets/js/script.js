@@ -74,35 +74,35 @@ document.addEventListener('DOMContentLoaded', function () {
         if (validPhoneNumber) {
             // Network provider recognition logic
             if (/^080[63]/.test(phoneNumber)) {
-                displayProvider('MTN', 'mtn-logo.png');
+                displayProvider('MTN', './assets/images/mtn-logo.png');
             } else if (/^081[0364]/.test(phoneNumber)) {
-                displayProvider('MTN', 'mtn-logo.png');
+                displayProvider('MTN', './assets/images/mtn-logo.png');
             } else if (/^090[36]/.test(phoneNumber)) {
-                displayProvider('MTN', 'mtn-logo.png');
+                displayProvider('MTN', './assets/images/mtn-logo.png');
             } else if (/^070[346(25)(26)]/.test(phoneNumber)) {
-                displayProvider('MTN', 'mtn-logo.png');
+                displayProvider('MTN', './assets/images/mtn-logo.png');
             } else if (/^081[2]/.test(phoneNumber)) {
-                displayProvider('Airtel', 'airtel-logo.png');
+                displayProvider('Airtel', './assets/images/airtel-logo.png');
             } else if (/^080[28]/.test(phoneNumber)) {
-                displayProvider('Airtel', 'airtel-logo.png');
+                displayProvider('Airtel', './assets/images/airtel-logo.png');
             } else if (/^090[217]/.test(phoneNumber)) {
-                displayProvider('Airtel', 'airtel-logo.png');
+                displayProvider('Airtel', './assets/images/airtel-logo.png');
             } else if (/^070[81]/.test(phoneNumber)) {
-                displayProvider('Airtel', 'airtel-logo.png');
+                displayProvider('Airtel', './assets/images/airtel-logo.png');
             } else if (/^080[9]/.test(phoneNumber)) {
-                displayProvider('9mobile', '9mobile-logo.png');
+                displayProvider('9mobile', './assets/images/9mobile-logo.png');
             } else if (/^090[89]/.test(phoneNumber)) {
-                displayProvider('9mobile', '9mobile-logo.png');
+                displayProvider('9mobile', './assets/images/9mobile-logo.png');
             } else if (/^081[78]/.test(phoneNumber)) {
-                displayProvider('9mobile', '9mobile-logo.png');
+                displayProvider('9mobile', './assets/images/9mobile-logo.png');
             } else if (/^090[5]/.test(phoneNumber)) {
-                displayProvider('GLO', 'glo-logo.png');
+                displayProvider('GLO', './assets/images/./assets/images/glo-logo.png');
             } else if (/^080[57]/.test(phoneNumber)) {
-                displayProvider('GLO', 'glo-logo.png');
+                displayProvider('GLO', './assets/images/glo-logo.png');
             } else if (/^081[15]/.test(phoneNumber)) {
-                displayProvider('GLO', 'glo-logo.png');
+                displayProvider('GLO', './assets/images/glo-logo.png');
             } else {
-                displayProvider('Unknown', 'unknown-logo.png');
+                displayProvider('Unknown', './assets/images/unknown-logo.png');
             }
         
 
