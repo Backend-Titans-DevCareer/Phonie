@@ -1,0 +1,37 @@
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+label{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.user-box{
+    width: 400px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(129, 125, 125);
+    border-radius: 50px;
+    padding: 35px;
+    overflow: hidden;
+}
+#submit{
+    height: 60px;
+    padding: 10px;
+    font-size: 18px;
+    color: cornsilk;
+    border-radius: 50px;
+    background-color: rgb(18, 53, 53);
+    color: rgb(129, 125, 125);
+    border: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
