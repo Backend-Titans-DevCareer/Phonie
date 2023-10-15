@@ -1,3 +1,9 @@
+:root{
+    --color-one: #2E4057;
+    --color-two: #D4D6B9;
+    --color-three: #083D77;
+}
+
 body {
     display: block;
     justify-content: center;
@@ -5,22 +11,20 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: var(--color-one);
 }
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--color-two);
+    color: var(--color-three);
     padding: 20px 0;
     text-align: center;
-    border-radius: 5px;
     position:relative;
 
 }
 .form-container {
-    background-color: #403f3f;
-    border-radius: 10px;
+    background-color: var(--color-one);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 20px 20px 80px 20px;
     text-align: center;
     height: 80%;
 }
@@ -36,18 +40,28 @@ h1 {
     align-items: center;
 }
 
+label{
+    color: var(--color-two);
+    font-weight: 700;
+}
+
 input {
+    background-color: var(--color-two);
     padding: 10px;
-    margin: 10px 0;
-    width: 80%;
+    margin: 2px 0 20px;
+    width: 500px;
     border: 1px solid #242424;
     border-radius: 5px;
 }
 
+input:focus{
+    outline: none;
+}
+
 button {
     padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: #000;
+    color: var(--color-two);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -67,21 +81,30 @@ button {
 }
 
 #provider-name {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 600;
     margin-top: 10px;
-    color: #e1dfdf;
+    color: var(--color-two);
 }
 /* Footer Styles */
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color:var(--color-one);
+    color: var(--color-two);
     padding: 10px 0;
     text-align: center;
-    border-radius: 5px;
     position:relative;
 
 }
 
+.foot-item, em{
+    font-size: .7rem;
+    font-weight: bold;
+}
 
+@media screen and (max-width: 759px) {
+    input {
+        width: 80%;
+    }
+    
+}
