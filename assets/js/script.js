@@ -137,14 +137,11 @@ document.addEventListener("DOMContentLoaded", function () {
           ) {
             displayProvider("Airtel", "./assets/images/airtel-logo.png");
           } else if (
-            GLO_PREFIX.some((i) => i.toString === matchWithCountryCode)
+            GLO_PREFIX.some((i) => i.toString() === matchWithCountryCode)
           ) {
-            displayProvider(
-              "GLO",
-              "./assets/images/./assets/images/glo-logo.png"
-            );
+            displayProvider("GLO", "./assets/images/glo-logo.png");
           } else if (
-            ETISALAT_PREFIX.some((i) => i.toString === matchWithCountryCode)
+            ETISALAT_PREFIX.some((i) => i.toString() === matchWithCountryCode)
           ) {
             displayProvider("9mobile", "./assets/images/9mobile-logo.png");
           } else {
@@ -158,12 +155,9 @@ document.addEventListener("DOMContentLoaded", function () {
             displayProvider("MTN", "./assets/images/mtn-logo.png");
           } else if (AIRTEL_PREFIX.some((i) => i.toString() === firstFour)) {
             displayProvider("Airtel", "./assets/images/airtel-logo.png");
-          } else if (GLO_PREFIX.some((i) => i.toString === firstFour)) {
-            displayProvider(
-              "GLO",
-              "./assets/images/./assets/images/glo-logo.png"
-            );
-          } else if (ETISALAT_PREFIX.some((i) => i.toString === firstFour)) {
+          } else if (GLO_PREFIX.some((i) => i.toString() === firstFour)) {
+            displayProvider("GLO", "./assets/images/glo-logo.png");
+          } else if (ETISALAT_PREFIX.some((i) => i.toString() === firstFour)) {
             displayProvider("9mobile", "./assets/images/9mobile-logo.png");
           } else {
             displayProvider("Unknown", "./assets/images/unknown-logo.png");
