@@ -1,4 +1,4 @@
-:root{
+/* :root{
     --color-one: #2E4057;
     --color-two: #D4D6B9;
     --color-three: #083D77;
@@ -86,7 +86,7 @@ button {
     margin-top: 10px;
     color: var(--color-two);
 }
-/* Footer Styles */
+Footer Styles
 
 footer {
     background-color:var(--color-one);
@@ -107,4 +107,143 @@ footer {
         width: 80%;
     }
     
+} */
+
+
+:root {
+    --bg-body: #393940e1;
+    --bg-card: #393940;
+    --light-green: #93C814;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-body);
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem 5rem;
+    gap: 1rem
+}
+
+nav h1 {
+    font-size: 2rem;
+    color: var(--light-green);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card-container {
+    max-width: 70%;
+    border-radius: 1rem;
+}
+
+.card {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    padding: 0.5rem 2.5rem 0.5rem 0.5rem;
+    border-radius: 1rem;
+    background-color: var(--bg-card);
+}
+
+.left-image {
+    width: 50%;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+#phone-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    flex: 1;
+}
+
+.form-container label {
+    color: aliceblue;
+    font-weight: 600;
+}
+
+.form-container input {
+    padding: 0.5rem;
+    margin-top: 10px;
+    border-radius: 0.3rem;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.form-container input::placeholder {
+    font-size: 0.7rem;
+}
+
+.form-container :focus {
+    outline: none;
+}
+
+.network-change {
+    display: flex
+}
+
+.network-change input {
+    border-radius: 0 0.3rem 0.3rem 0;
+    margin-top: 0;
+}
+
+#provider-indicator {
+    position: relative;
+}
+
+#provider-indicator img {
+    border-radius: 0.3rem 0 0 0.3rem;
+}
+
+#provider-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+button:disabled {
+    background-color: #5C753E;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--light-green);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    width: 50%;
+}
+
+@media screen and (max-width: 586px) {
+    .card {
+        flex-direction: column;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+
+    .left-image {
+        width: 100%;
+    }
 }
