@@ -62,7 +62,7 @@ If you would like to contribute to this project, please follow these steps:
 
 ## License
 
-This project is licensed under the [BacKEnd Titans TEAM H @DevCareer](DevCareer).
+This project is licensed under the [BacKEnd Titans TEAM H @DevCareer](https://github.com/Backend-Titans-DevCareer/Phonie).
 
 ## Acknowledgments
 
