@@ -21,6 +21,12 @@ This project is a web application that validates phone numbers, checks the netwo
    git clone https://YourAccessToken@github.com/Backend-Titans-DevCareer/Phonie.git
    ```
 
+   or simply:::
+
+   ```bash
+   git clone https://github.com/Backend-Titans-DevCareer/Phonie.git
+   ```
+
 2. Open the project directory.
 
 3. Open the `index.html` file in your web browser to launch the application.
