@@ -16,12 +16,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/styles/styles.css">
     <script src="./assets/js/script.js" defer></script>
-    <title>Phonie (Phone Number Validation)</title>
+    <link rel="shortcut icon" href="assets/images/provider.png" type="image/x-icon">
+    <title>Phonie | Phone Number Validation</title>
 </head>
 <body>
 
-
-    <header>
+    <!-- <header>
         <h1>Phone Number Validator</h1>
         <i class="fa fa-star"></i>
         <i class="fa fa-star"></i>
@@ -38,7 +38,7 @@
             <input type="email" id="email" placeholder="Your Email Address">
 
             <label for="phone-number">Phone Number:</label>
-            <input type="number" id="phone-number" placeholder="Enter your phone number">
+            <input type="tel" id="phone-number" placeholder="Enter your phone number">
             <button type="submit">Submit</button>
         </form>
         <div id="provider-indicator">
@@ -51,7 +51,51 @@
     <footer>
         <p class="foot-item">&copy; 2023  All rights reserved.</p>
         <em> DevCharis  &reg; Roqbell &reg; Ashade</em>
-    </footer>
+    </footer> -->
+    <header>
+        <nav>
+            <div style="width: 2.5rem">
+                <img src="assets/images/provider.png" alt="logo" style="width: 100%" />
+            </div>
+            <h1>Phonie</h1>
+        </nav>
+    </header>
+    <main>
+        <div class="card-container">
+            <div class="card">
+                <div class="left-image"><img src="assets/images/network.jpg" alt="left side background" style="width: 100%; height: 100%; border-radius: 1rem"/></div>
+                <div class="form-container">
+                    <form id="phone-form">
+                        <div>
+                            <label for="name">Name:</label><br />
+                            <input type="text" id="name" placeholder="Your Name">
+                        </div>
+            
+                        <div>
+                            <label for="email">Email Address:</label><br />
+                            <input type="email" id="email" placeholder="Your Email Address">
+                        </div>
+                        
+                        <div>
+                            <label for="phone-number">Phone Number:</label>
+                            <div class="network-change">
+                                <div id="provider-indicator">
+                                    <div style="width: 30px; height: 35px;">
+                                        <img src="./assets/images/net-logo.jpg" alt="Network" id="provider-icon" style="width: 100%; height: 100%; object-fit: cover;">
+                                    </div>
+                                    <p id="provider-name" aria-hidden="true" style="font-size: 10px; color: white; visibility: hidden" screen></p>
+                                </div>
+                                <input type="tel" id="phone-number" placeholder="Enter your phone number">
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: flex-end;">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
 
 </body>
 
