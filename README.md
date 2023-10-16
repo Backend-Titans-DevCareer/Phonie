@@ -1,7 +1,8 @@
 # Backend-Titans
+
 ---
 
-# Phone Number Validation
+## Phone Number Validation
 
 This project is a web application that validates phone numbers, checks the network provider, and provides real-time feedback to the user. It also validates the user's name and email address before allowing form submission. The project is built using HTML, CSS, and JavaScript.
 
@@ -17,7 +18,7 @@ This project is a web application that validates phone numbers, checks the netwo
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/phone-validation.git
+   git clone https://YourAccessToken@github.com/Backend-Titans-DevCareer/Phonie.git
    ```
 
 2. Open the project directory.
@@ -55,7 +56,7 @@ If you would like to contribute to this project, please follow these steps:
 
 ## License
 
-This project is licensed under the [DevCharis License](LICENSE).
+This project is licensed under the [BacKEnd Titans TEAM H @DevCareer](DevCareer).
 
 ## Acknowledgments
 
@@ -63,6 +64,6 @@ This project is licensed under the [DevCharis License](LICENSE).
 
 ## Contact
 
-For any questions or inquiries, please contact [Bamidele Joshua Temitope](mailto:joshuabamidele9@gmail.com).
+For any questions or inquiries, please contact [TeamH@DevCareer](mailto:***@gmail.com).
 
 ---
