@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   phoneNumberInput.addEventListener("input", function (e) {
     const inputValue = e.target.value.trim();
-    const isNigerianNumber = inputValue.startsWith("+234") || inputValue.startsWith("080");
+    const isNigerianNumber = inputValue.startsWith("+234")
 
     if (inputValue === "") {
       phoneNumberInput.classList.remove("invalid");
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
    
     if (isNigerianNumber) {
       if (inputValue.length > 14) {
-        e.target.value = inputValue.slice(0, 13);
+        e.target.value = inputValue.slice(0, 14);
       }
     } else {
       if (inputValue.length > 11) {
