@@ -77,8 +77,27 @@ document.addEventListener("DOMContentLoaded", function () {
   const providerName = document.getElementById("provider-name");
   const submitButton = document.querySelector('button[type="submit"]');
 
-  phoneNumberInput.addEventListener("input", function () {
-    validateForm();
+  phoneNumberInput.addEventListener("input", function (e) {
+    const inputValue = e.target.value.trim();
+    const isNigerianNumber = inputValue.startsWith("+234") || inputValue.startsWith("080");
+
+    if (inputValue === "") {
+      phoneNumberInput.classList.remove("invalid");
+      resetProviderIndicator();
+      validPhoneNumber = false;
+    }
+   
+    if (isNigerianNumber) {
+      if (inputValue.length > 14) {
+        e.target.value = inputValue.slice(0, 13);
+      }
+    } else {
+      if (inputValue.length > 11) {
+        e.target.value = inputValue.slice(0, 11);
+      }
+    }
+
+    validateForm()
   });
 
   nameInput.addEventListener("input", function () {
@@ -178,5 +197,11 @@ document.addEventListener("DOMContentLoaded", function () {
   function displayProvider(provider, logo) {
     providerName.textContent = provider;
     providerIcon.src = logo;
+  }
+
+  function resetProviderIndicator() {
+    providerIcon.src = "./assets/images/net-logo.jpg";
+    providerName.textContent = "";
+    providerName.style.visibility = "hidden";
   }
 });
